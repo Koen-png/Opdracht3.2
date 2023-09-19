@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<!--REQUIRED ON EVERY PAGE, NOTE THAT THE LANGUAGE IS SET TO ENGLISH-->
+    <title>
+        TUI boekingsformulier
+    </title>
+</head>
+
+<body>
+    <form>
+        <label for="fNaam">Voornaam</label><br>
+            <input type="text" id="fnaam" name="fnaam" pattern="[^0-9]*"><br>
+
+        <label for="aNaam">Achternaam</label><br>
+            <input type="text" id="aNaam" name="aNaam" pattern="[^0-9]*"><br>
+
+        <label for="gender">Geslacht</label><br>
+            <input type="text" id="gender" name="gender" value="Man"><br>
+        
+        <a>Voornaam woorden</a><br>
+            <label>
+                <input type="radio" name="pronoun" value="male">
+                hij/zijn
+            </label>
+            <label>
+                <input type="radio" name="pronoun" value="female">
+                zij/haar
+            </label>
+            <label>
+                <input type="radio" name="pronoun" value="other1">
+                zij/hun
+            </label>
+            <label>
+                <input type="radio" name="pronoun" value="other2">
+                die/diens
+            </label><br>
+
+        <label for="Home">Straat met huisnummer</label><br>
+            <input type="text" id="Home" name="Home"><br>
+
+        <label for="Postcode">Postcode</label><br>
+            <input type="text" id="Postcode" name="Postcode"><br>
+
+        <label for="Stad">Stad</label><br>
+            <input type="text" id="Stad" name="Stad" pattern="[^0-9]*"><br>
+
+        <label for="Land">Land</label><br>
+            <input type="text" id="Land" name="Land" pattern="[^0-9]*"><br>
+
+        <label for="BSN">BSN-nummer</label><br>
+            <input type="text" id="BSN" name="BSN" maxlength="9"><br>
+
+        <label for="destination"></label>Vakantieland selecteren<br>
+        <select id="destination" name="destination">
+            <option value="apple">Nedeland</option>
+            <option value="banana">Belgie</option>
+            <option value="orange">Luxenburgh</option>
+            <option value="grape">Duitsland</option>
+        </select> <br>
+
+        <label for="dateL">Datum van vertrek</label><br>
+            <input type="date" id="dateL" name="dateL" min="2023-09-19"><br>
+
+        <label for="dateR"></label>Datum van terugkomst<br>
+            <input type="date" id="dateR" name="dateR" min="2023-09-19"><br>
+
+        <label for="passengers"></label>Aantal reisgenoten (max 4 mensen)<br>
+            <input type="number" id="passengers" name="passengers" min="1" max="4"><br>
+
+        <label for="Booknow">Boek nu</label><br>
+            <input type="text" id="Booknow" name="Booknow"><br>
+
+        <label for="Email"></label>E-mail<br>
+            <input type="e-mail" id="Email" name="Email"><br>
+
+        <label for="pasword"></label>Wachtwoord<br>
+            <input type="password" id="pasword" name="pasword"><br>
+    </form>
+</body>
